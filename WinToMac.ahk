@@ -12,6 +12,8 @@ RWin::RCtrl
 ; Make Ctrl + S work with cmd (windows) key
 #s::Send, ^s
 
+#d::Send, ^d
+
 ; Selecting
 #a::Send, ^a
 
@@ -40,7 +42,15 @@ RWin::RCtrl
 #t::Send ^t
 
 ; close tab
-#w::Send ^W
+#w::Send ^w
+
+#i::Send ^i
+
+; git
+#g::Send ^g
+#b::Send ^b
+#r::Send ^r
+#p::Send ^p
 
 ; Close windows (cmd + q to Alt + F4)
 #q::Send !{F4}
@@ -52,6 +62,18 @@ Lwin & Tab::AltTab
 
 ; LWin & Space
 Lwin & Space::Send, ^{Space}
+
+#+p::Send, ^+p
+#+d::Send, ^+d
+#+f::Send, ^+f
+#+t::Send, ^+t
+#!PgDn::Send, ^!{PgDn}
+#!PgUp::Send, ^!{PgUp}
+
+#Numpad7::Send, ^{Numpad7}
+
+#F1::Send, ^{F1}
+
 
 ; Arrow Keys
 Lwin & Up::Send, ^{Up}
